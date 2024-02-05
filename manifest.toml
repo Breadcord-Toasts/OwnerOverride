@@ -1,0 +1,9 @@
+manifest_version = 1
+
+[module]
+name = "Owner Override"
+id = "owner_override"
+description = "Allows a bot admin to one-off authorise an unauthorised user to use an woner only command."
+version = "1.0.0"
+license = "GNU AGPLv3"
+authors = ["Fripe"]
