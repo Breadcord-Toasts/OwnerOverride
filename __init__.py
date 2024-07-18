@@ -46,5 +46,5 @@ class OwnerOverride(breadcord.module.ModuleCog):
         await self.bot.invoke(modified_ctx)
 
 
-async def setup(bot: breadcord.Bot):
-    await bot.add_cog(OwnerOverride("owner_override"))
+async def setup(bot: breadcord.Bot, module: breadcord.module.Module) -> None:
+    await bot.add_cog(OwnerOverride(module.id))
